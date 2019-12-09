@@ -23,7 +23,23 @@ namespace Assessment.UI.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult AddQuestion()
+        {
+            return View();
+        }
+        public IActionResult QuestionBank()
+        {
+            return View();
+        }
+        public IActionResult ExamPaper()
+        {
+            return View();
+        }
+        public IActionResult Attendees()
+        {
+            return View();
+        }
+        public IActionResult ExamSession()
         {
             return View();
         }
