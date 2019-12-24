@@ -22,7 +22,7 @@ namespace Assessment.Web
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("Connection2")));
+                    Configuration.GetConnectionString("ConnectionSqlServer")));
 
             services.AddControllersWithViews();
            services.AddRazorPages();
