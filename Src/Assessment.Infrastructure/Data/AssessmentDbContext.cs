@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Assessment.Infrastructure.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class AssessmentDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public AssessmentDbContext(DbContextOptions<AssessmentDbContext> options)
             : base(options)
         {
         }
