@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <nav class="uk-navbar-container uk-margin uk-background-secondary" uk-navbar>
             <div class="uk-navbar-left">
 
                 <a class="uk-navbar-item uk-logo" asp-area="" asp-controller="Home" asp-action="Index">
@@ -75,19 +75,35 @@
             </div>
         </nav>
     </header>
-    <div>
+    <div class="uk-container">
         <main role="main">
             @RenderBody()
         </main>
     </div>
 
     <footer>
-        <div class="content has-text-centered">
-            <p>
-                <strong>Assessment</strong> &copy; 2019
-            </p>
+
+        <div class="uk-section uk-section-muted">
+            <div class="uk-container">
+
+                <h3>Assessment &copy; 2019</h3>
+
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/uikit/js/uikit.min.js"></script>
     <script src="~/lib/uikit/js/uikit-icons.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
