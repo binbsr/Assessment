@@ -1,10 +1,10 @@
 {
   "version": "1.0",
   "defaultProvider": "cdnjs",
-  "libraries": [
+  "libraries": [    
     {
-      "library": "materialize@1.0.0",
-      "destination": "wwwroot/lib/materialize/"
+      "library": "uikit@3.2.3",
+      "destination": "wwwroot/lib/uikit/"
     }
   ]
 }
