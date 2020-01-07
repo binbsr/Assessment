@@ -8,72 +8,80 @@
 </head>
 <body>
     <header>
-        <nav class="uk-navbar-container uk-margin uk-background-secondary" uk-navbar>
-            <div class="uk-navbar-left">
+        <div class="uk-light uk-background-secondary">
+            <nav class="uk-margin" uk-navbar>
 
-                <a class="uk-navbar-item uk-logo" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/Assessment.png" style="height:70px" title="Assessment Tool" />
-                </a>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/Assessment.png" style="height:70px" title="Assessment Tool" />
+                    </a>
 
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="#">HR Things</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-item">Department</a></li>
-                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Admin Users</a></li>
-                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Jobs (Designation and Level)</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                        <div class="uk-navbar-dropdown">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-item">Index</a></li>
-                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Privacy</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#">HR Things</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index"
+                                            class="navbar-item">Department</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Admin
+                                            Users</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Jobs
+                                            (Designation and Level)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Home</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-item">Index</a>
+                                    </li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy"
+                                            class="navbar-item">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
 
-                <ul class="uk-navbar-nav">
-                    <li>
-                        <a href="#">Item</a>
-                        <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                            <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-                                <div>
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-header">Header</li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-divider"></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-header">Header</li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li class="uk-nav-divider"></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#">Item</a>
+                            <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                    <div>
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
 
-            </div>
-            <div class="uk-navbar-right">
-                <partial name="_LoginPartial" />
-            </div>
-        </nav>
+                </div>
+                <div class="uk-navbar-right">
+                    <partial name="_LoginPartial" />
+                </div>
+            </nav>
+        </div>
+
     </header>
     <div class="uk-container">
         <main role="main">
