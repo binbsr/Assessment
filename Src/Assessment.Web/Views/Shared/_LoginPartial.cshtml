@@ -1,0 +1,31 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Assessment.Web.Areas.Identity.Data
+@inject SignInManager<AssessmentIdentityUser> SignInManager
+@inject UserManager<AssessmentIdentityUser> UserManager
+
+<ul class="uk-navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li>
+            <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello, @User.Identity.Name</a>
+            <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li>
+                        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button class="uk-button uk-button-danger uk-width-1-1" type="submit">Logout</button>
+                        </form>
+                    </li>
+                    <li class="uk-nav-header">Profile</li>
+                    <li><a asp-area="Identity" asp-page="/Account/Manage/ChangePassword">Change Password</a></li>
+                    <li><a asp-area="Identity" asp-page="/Account/Manage/EnableAuthenticator">Enable Authenticator</a></li>
+                    <li><a asp-area="Identity" asp-page="/Account/Manage/Index">Manage Account</a></li>
+                </ul>
+            </div>
+        </li>
+    }
+    else
+    {
+        <li><a class="uk-text-success" asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+        <li><a class="uk-text-success" asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+    }
+</ul>

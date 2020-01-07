@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{16DCC6ED-86F5-4307-B190-B55492F8A775}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17A4FA81-467E-4E33-BA19-4D705A94EAD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.Web", "Src\Assessment.Web\Assessment.Web.csproj", "{CFB24CD1-F1A2-4EF7-BFF0-D70E92D86DAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.ApplicationCore", "Src\Assessment.ApplicationCore\Assessment.ApplicationCore.csproj", "{C500A75E-3042-449B-A9B1-AE1EA930897A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.Infrastructure", "Src\Assessment.Infrastructure\Assessment.Infrastructure.csproj", "{6D6492EB-A00D-4888-9100-534E79CBA594}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assessment.Web.Tests", "Tests\Assessment.Web.Tests\Assessment.Web.Tests.csproj", "{1BFE00F7-EA7E-4939-9620-8877B17A2610}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06BC541A-B1A3-42A1-8D93-B3B4924119A8}"
+	ProjectSection(SolutionItems) = preProject
+		Src\ASPNETCoreRuntimeArchitecture.png = Src\ASPNETCoreRuntimeArchitecture.png
+		..\..\..\..\Assessment_Schema_Hint.png = ..\..\..\..\Assessment_Schema_Hint.png
+		Src\readme.txt = Src\readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFB24CD1-F1A2-4EF7-BFF0-D70E92D86DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB24CD1-F1A2-4EF7-BFF0-D70E92D86DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB24CD1-F1A2-4EF7-BFF0-D70E92D86DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB24CD1-F1A2-4EF7-BFF0-D70E92D86DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C500A75E-3042-449B-A9B1-AE1EA930897A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C500A75E-3042-449B-A9B1-AE1EA930897A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C500A75E-3042-449B-A9B1-AE1EA930897A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C500A75E-3042-449B-A9B1-AE1EA930897A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6492EB-A00D-4888-9100-534E79CBA594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6492EB-A00D-4888-9100-534E79CBA594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6492EB-A00D-4888-9100-534E79CBA594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6492EB-A00D-4888-9100-534E79CBA594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFE00F7-EA7E-4939-9620-8877B17A2610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFE00F7-EA7E-4939-9620-8877B17A2610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFE00F7-EA7E-4939-9620-8877B17A2610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFE00F7-EA7E-4939-9620-8877B17A2610}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFB24CD1-F1A2-4EF7-BFF0-D70E92D86DAF} = {16DCC6ED-86F5-4307-B190-B55492F8A775}
+		{C500A75E-3042-449B-A9B1-AE1EA930897A} = {16DCC6ED-86F5-4307-B190-B55492F8A775}
+		{6D6492EB-A00D-4888-9100-534E79CBA594} = {16DCC6ED-86F5-4307-B190-B55492F8A775}
+		{1BFE00F7-EA7E-4939-9620-8877B17A2610} = {17A4FA81-467E-4E33-BA19-4D705A94EAD3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11203C0E-79A4-4A26-AECB-802129CD4FED}
+	EndGlobalSection
+EndGlobal

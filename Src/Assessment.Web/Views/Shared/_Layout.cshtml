@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Assessment</title>
+    <link href="~/lib/uikit/css/uikit.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="uk-navbar-container uk-margin uk-background-secondary" uk-navbar>
+            <div class="uk-navbar-left">
+
+                <a class="uk-navbar-item uk-logo" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/Assessment.png" style="height:70px" title="Assessment Tool" />
+                </a>
+
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">HR Things</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-item">Department</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Admin Users</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Jobs (Designation and Level)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-item">Index</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy" class="navbar-item">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">Item</a>
+                        <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                            <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Active</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-header">Header</li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="uk-navbar-right">
+                <partial name="_LoginPartial" />
+            </div>
+        </nav>
+    </header>
+    <div class="uk-container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+
+        <div class="uk-section uk-section-muted">
+            <div class="uk-container">
+
+                <h3>Assessment &copy; 2019</h3>
+
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/uikit/js/uikit.min.js"></script>
+    <script src="~/lib/uikit/js/uikit-icons.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
